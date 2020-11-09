@@ -9,6 +9,10 @@ body {
     font-style: normal !important;
     font-family: "Roboto Condensed", sans-serif !important;
 }
+.container {
+    max-width: 1200px !important;
+}
+
 .columns {
     margin: 0px !important;
     padding: 0px !important;
@@ -17,7 +21,6 @@ body {
     margin: 0px !important;
     padding: 0px !important;
 }
-
 
 .input,
 .button {

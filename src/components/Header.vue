@@ -30,7 +30,7 @@
                         <a class="cart" href="/">
                             <b-field position="is-right">
                                 <button><img src="@/assets/header/basket.png" /></button>
-                                <input class="cart-text" placeholder="0 Urun/0,00TL" disabled />
+                                <input class="cart-text" placeholder="0 Urun/0,00 TL" disabled />
                             </b-field>
                         </a>
                     </div>
@@ -64,19 +64,23 @@ export default {
     font-size: 13px;
     color: #fff;
 }
+.header-top a:hover {
+    font-size: 13px;
+    color: #fff;
+}
 .header {
     background-color: #0aa2ee;
 }
 .search input {
     width: 100%;
-    background: #018cd1;
-    box-sizing: border-box;
-    padding: 10px 50px 10px 20px;
+    border: none;
+    outline: none;
     color: #fff;
     font-size: 14px;
+    background: #018cd1;
+    box-sizing: border-box;
+    padding: 10px 40px 10px 20px;
     font-family: "Roboto Condensed";
-    outline: none;
-    border: none;
 }
 .search input::placeholder {
     color: #fff !important;
@@ -84,8 +88,8 @@ export default {
 .search button {
     width: 40px;
     cursor: pointer;
-    outline: none !important;
     border: none !important;
+    outline: none !important;
     background: #fff !important;
 }
 
@@ -97,14 +101,14 @@ export default {
 }
 .cart input {
     width:33%;
-    color: #fff;
-    background: #018cd1;
-    font-size: 14px;
-    font-weight: 700;
-    outline: none;
-    cursor: pointer;
     border: none;
-    padding: 10px 50px 10px 20px;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    background: #018cd1;
+    padding: 10px 20px 10px 20px;
     font-family: "Roboto Condensed";
 }
 .cart input::placeholder {
