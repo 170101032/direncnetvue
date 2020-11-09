@@ -2,7 +2,7 @@
          170101032 Ilker T.
 
 ## Gereksinimler
-[Gereken Component Listesi](https://github.com/170101032/direncnetvue/tree/main/gerensinimler)
+[Gereken Component Listesi](https://github.com/170101032/direncnetvue/tree/main/gereksinimler)
  - [X] Urun detaylari (direnc1.png) > localhost:8080/productdetails {Showcaseden harhangibir urune tiklanarak}
  - [X] Alisveris modal (direnc2.png) > Urunlistesinden sepete ekle tiklanarak
  - [X] Urun detayi floatbar (direnc3.png) > Urun detayi sayfasinda scrollandiginda
