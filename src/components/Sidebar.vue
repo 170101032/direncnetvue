@@ -1,6 +1,6 @@
 <template>
     <div class="columns is-multiline">
-        <b-collapse class="column is-12 mx-5" animation="slide" v-for="(category, i) of categories" :key="i" :open="isOpen == i" @open="isOpen = i">
+        <b-collapse class="column is-12" animation="slide" v-for="(category, i) of categories" :key="i" :open="isOpen == i" @open="isOpen = i">
             <div slot="trigger" slot-scope="props" :class="props.open ? 'catopen' : 'catclosed'">
                 <img v-if="props.open" :src="require('@/assets/sidebar/plus_active.png')" />
                 <img v-if="!props.open" :src="require('@/assets/sidebar/plus_passive.png')" />
@@ -13,7 +13,7 @@
                 <img v-if="!subcategory.items.length" :src="require('@/assets/sidebar/sub_arrow.png')" />
                     {{ subcategory.title }}
                 </div>
-                <div class="column is-12 item p-0" v-for="(item, i3) of subcategory.items" :key="i3">
+                <div class="column is-12 item p-0 pl-4" v-for="(item, i3) of subcategory.items" :key="i3">
                     {{ item }}
                 </div>
             </b-collapse>

@@ -9,11 +9,17 @@
         <div class="column is-12">
             <Carousel />
         </div>
-        <div class="column is-3">
-            <Sidebar />
-        </div>
-        <div class="column is-9">
-            dd
+        <div class="column is-12">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-3">
+                        <Sidebar />
+                    </div>
+                    <div class="column is-9">
+                        <ShowcaseMain />
+                    </div>
+                </div>
+            </div>
         </div>
         <FooterTop class="column is-12" />
         <Footer class="column is-12" />
@@ -23,8 +29,9 @@
 <script>
 import Header from "@/components/Header.vue";
 import Navbar from "@/components/Navbar.vue";
-import Sidebar from "@/components/Sidebar.vue";
 import Carousel from "@/components/Carousel.vue";
+import Sidebar from "@/components/Sidebar.vue";
+import ShowcaseMain from "@/components/ShowcaseMain.vue";
 import FooterTop from "@/components/FooterTop.vue";
 import Footer from "@/components/Footer.vue";
 
@@ -33,8 +40,9 @@ export default {
     components: {
         Header,
         Navbar,
-        Sidebar,
         Carousel,
+        Sidebar,
+        ShowcaseMain,
         FooterTop,
         Footer,
     },

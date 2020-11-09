@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <nav class="columns navbar my-3">
+        <nav class="columns navbar my-2">
             <a class="column item">Tum kategoriler</a>
             <a class="column item">Yeni Urunler</a>
             <a class="column item">Outlet</a>

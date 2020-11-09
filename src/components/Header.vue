@@ -2,12 +2,14 @@
     <div class="columns is-multiline">
         <div class="column is-12 headerTop">
             <div class="container">
-                <div class="columns container">
-                    <div class="column is-pulled-right">
-                        <span class=""><a>Facebook Ile Baglan</a></span>
-                        <span class=""><a>Uye Girisi</a></span>
-                        <span class=""><a>Yeni Uyelik</a></span>
-                        <span class=""><a>TR</a></span>
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-pulled-right">
+                            <span class=""><a>Facebook Ile Baglan</a></span>
+                            <span class=""><a>Uye Girisi</a></span>
+                            <span class=""><a>Yeni Uyelik</a></span>
+                            <span class=""><a>TR</a></span>
+                        </div>
                     </div>
                 </div>
             </div>
