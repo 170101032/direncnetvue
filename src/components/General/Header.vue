@@ -6,7 +6,7 @@
                     <div class="columns">
                         <div class="column p-1" align="right">
                             <a class="pl-4"><img class="pr-2" src="@/assets/header/fb.png" />Facebook Ile Baglan</a>
-                            <a class="pl-4"><img class="pr-2" src="@/assets/header/log_in.png" />Uye Girisi</a>
+                            <a class="pl-4" @click="signinActive = true"><img class="pr-2" src="@/assets/header/log_in.png" />Uye Girisi</a>
                             <a class="pl-4"><img class="pr-2" src="@/assets/header/register.png" />Yeni Uyelik</a>
                             <a class="pl-4"><img class="pr-2" src="@/assets/header/tr.png" />TR</a>
                         </div>
@@ -27,7 +27,7 @@
                         </b-field>
                     </div>
                     <div class="column" align="right">
-                        <a class="cart" href="/">
+                        <a class="cart" href="/cart">
                             <b-field position="is-right">
                                 <button><img src="@/assets/header/basket.png" /></button>
                                 <input class="cart-text" placeholder="0 Urun/0,00 TL" disabled />
@@ -37,18 +37,27 @@
                 </div>
             </div>
         </div>
+        <b-modal v-model="signinActive" has-modal-card trap-focus :destroy-on-hide="false" aria-role="dialog" aria-modal>
+             <a class="close"><img src="@/assets/signin/popupClose.png"/></a>
+            <SignInModal />
+        </b-modal>
     </div>
 </template>
 
 <script>
+import SignInModal from "@/components/General/SignInModal.vue";
 //import store from "@/store";
 
 export default {
     name: "Header",
-    components: {},
+    components: {
+        SignInModal,
+    },
     props: {},
     data() {
-        return {};
+        return {
+            signinActive: false,
+        };
     },
     async created() {},
     methods: {},
@@ -60,8 +69,8 @@ export default {
 .header-top {
     background-color: #1eaef6;
 }
-.header-top img{
-    vertical-align:text-bottom;
+.header-top img {
+    vertical-align: text-bottom;
 }
 .header-top a {
     font-size: 13px;
@@ -103,7 +112,7 @@ export default {
     background: #fff !important;
 }
 .cart input {
-    width:33%;
+    width: 33%;
     border: none;
     color: #fff;
     outline: none;

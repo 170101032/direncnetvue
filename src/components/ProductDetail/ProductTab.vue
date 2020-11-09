@@ -2,7 +2,9 @@
     <div class="columns is-multiline product-tab p-2">
         <div class="column is-12">
             <b-tabs>
-                <b-tab-item label="Urun Ozellikleri"></b-tab-item>
+                <b-tab-item label="Urun Ozellikleri">
+                    Raspberry Pi 4 28nm tabanlı 1.5G Dört Çekirdekli CPU ve 4Gb DRR4 RAM içeren küçük bir DIY bilgisayardır. PC benzeri yetenekler elde etmek için Raspberry Pi 4, 4K Mikro HDMI, USB 3.0, BLE Bluetooth 5.0, çift-bantlı 2.4/5.0 GHz Wireless LAN, USB-C güç girişi ve PoE ile uyumlu True Gigabit Ethernet'e sahiptir.
+                </b-tab-item>
                 <b-tab-item label="Odeme Secenekleri"></b-tab-item>
                 <b-tab-item label="Yorumlar(17)"><ProductComment /></b-tab-item>
                 <b-tab-item label="Resimler"></b-tab-item>

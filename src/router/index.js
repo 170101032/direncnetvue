@@ -11,9 +11,14 @@ const routes = [
     component: Homepage
   },
   {
-    path: "/urun",
+    path: "/productdetails",
     name: "Urun Sayfasi",
     component: () => import("../views/ProductPage.vue")
+  },
+  {
+    path: "/cart",
+    name: "Sepet Sayfasi",
+    component: () => import("../views/CartPage.vue")
   }
 ]
 
