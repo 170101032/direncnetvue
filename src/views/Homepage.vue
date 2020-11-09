@@ -27,13 +27,13 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Navbar from "@/components/Navbar.vue";
-import Carousel from "@/components/Carousel.vue";
-import Sidebar from "@/components/Sidebar.vue";
-import ShowcaseMain from "@/components/ShowcaseMain.vue";
-import FooterTop from "@/components/FooterTop.vue";
-import Footer from "@/components/Footer.vue";
+import Header from "@/components/General/Header.vue";
+import Navbar from "@/components/General/Navbar.vue";
+import Carousel from "@/components/Homepage/Carousel.vue";
+import Sidebar from "@/components/General/Sidebar.vue";
+import ShowcaseMain from "@/components/Homepage/ShowcaseMain.vue";
+import FooterTop from "@/components/General/FooterTop.vue";
+import Footer from "@/components/General/Footer.vue";
 
 export default {
     name: "Homepage",

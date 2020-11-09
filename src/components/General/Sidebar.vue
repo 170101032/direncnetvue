@@ -13,7 +13,7 @@
                     <img v-if="!subcategory.items" :src="require('@/assets/sidebar/sub_arrow.png')" />
                     {{ subcategory.title }}
                 </div>
-                <div class="column is-12 item p-1 pl-4" v-for="(item, i3) of subcategory.items" :key="i3">
+                <div class="column is-12 item p-1 pl-5" v-for="(item, i3) of subcategory.items" :key="i3">
                     {{ item }}
                 </div>
             </b-collapse>
@@ -1474,6 +1474,10 @@ export default {
 <style scoped>
 .category {
     cursor: pointer;
+    font-size: 14px;
+}
+.category img {
+    vertical-align: sub;
 }
 .catopen {
     color: #fff;

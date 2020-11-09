@@ -60,6 +60,9 @@ export default {
 .header-top {
     background-color: #1eaef6;
 }
+.header-top img{
+    vertical-align:text-bottom;
+}
 .header-top a {
     font-size: 13px;
     color: #fff;

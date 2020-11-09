@@ -1,22 +1,23 @@
 <template>
-    <b-tabs>
-        <b-tab-item label="Vitrin Urunleri">
-            <div class="columns is-multiline">
-                <div class="column is-3" v-for="(item, i) of items" :key="i">
-                    <a class="">
-                        <div class="columns is-multiline carditem">
-                            <div class="column is-12">
-                                <img :src="require('@/assets/products/' + item.img)" />
-                            </div>
-                            <div class="column is-12 cardbox">{{ item.title }}</div>
-                            <div class="column is-12 cardprice">{{ item.price }} TL + KDVL</div>
-                            <div class="column is-12 cardadd">Sepete Ekle</div>
-                        </div>
-                    </a>
-                </div>
+    <div class="columns is-multiline">
+        <div class="column is-12">
+            <div class="column is-2 p-2 showcase-title">
+                Vitrin Urunleri
             </div>
-        </b-tab-item>
-    </b-tabs>
+        </div>
+        <div class="column is-3" v-for="(item, i) of items" :key="i">
+            <a class="">
+                <div class="columns is-multiline carditem">
+                    <div class="column is-12">
+                        <img :src="require('@/assets/products/' + item.img)" />
+                    </div>
+                    <div class="column is-12 cardbox">{{ item.title }}</div>
+                    <div class="column is-12 cardprice">{{ item.price }} TL + KDV</div>
+                    <div class="column is-12 cardadd">Sepete Ekle</div>
+                </div>
+            </a>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -33,13 +34,13 @@ export default {
                     title: "Anycubic 4 MAX Pro 3 D Printer / 3 D Yazıcı - Monteli - Beyaz Renk",
                     img: "printer.jpg",
                     price: "3.616,20",
-                    link: "/productspecs",
+                    link: "/productdetails",
                 },
                 {
                     title: "Arduino Uno Süper Başlangıç Seti",
                     img: "arduinoset.jpg",
                     price: "191,10",
-                    link: "/product2specs",
+                    link: "/productdetails",
                 },
                 {
                     title: "Esp8266 Seri Wifi Modül",
@@ -279,6 +280,12 @@ export default {
 </script>
 
 <style scoped>
+.showcase-title {
+    color: #0aa2ee;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 2px solid #0aa2ee;
+}
 .carditem {
 }
 .carditem:hover {

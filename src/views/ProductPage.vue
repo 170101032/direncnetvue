@@ -26,13 +26,13 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Navbar from "@/components/Navbar.vue";
-import Sidebar from "@/components/Sidebar.vue";
-import Product from "@/components/Product.vue";
-import FooterTop from "@/components/FooterTop.vue";
-import Footer from "@/components/Footer.vue";
-import FloatBar from "@/components/FloatBar.vue";
+import Header from "@/components/General/Header.vue";
+import Navbar from "@/components/General/Navbar.vue";
+import Sidebar from "@/components/General/Sidebar.vue";
+import Product from "@/components/ProductDetail/ProductDetail.vue";
+import FooterTop from "@/components/General/FooterTop.vue";
+import Footer from "@/components/General/Footer.vue";
+import FloatBar from "@/components/ProductDetail/FloatBar.vue";
 
 export default {
     name: "ProductPage",
