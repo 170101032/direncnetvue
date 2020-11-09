@@ -55,7 +55,7 @@
 //import store from "@/store";
 
 export default {
-    name: "Product",
+    name: "ProductDetail",
     components: {},
     props: {},
     data() {
@@ -127,6 +127,9 @@ export default {
     font-size: 30px;
     font-weight: 700;
 }
+.quantity-button:hover {
+    color: #018cd1;
+}
 .quantity-input {
     height: 40px;
     border: 1px solid #018cd1;
@@ -145,11 +148,19 @@ export default {
     font-size: 24px;
     display: block;
 }
+.add-cart-button:hover {
+    color: #fff;
+    background-color: #0aa2ee;
+    animation: fadeIn ease 0.3s;
+}
 .add-list-button {
     color: #0cb57b;
     font-size: 18px;
     line-height: 18px;
     text-align: center;
+}
+.add-list-button:hover {
+    color: #0cb57b;
 }
 .add-list-button img {
     vertical-align: bottom;

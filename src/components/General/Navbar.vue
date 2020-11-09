@@ -42,6 +42,7 @@ export default {
     border-right: 1px solid #fff;
 }
 .item:hover {
+    animation: fadeIn ease 0.3s;
     background-color: #3cbeff;
 }
 .item:last-child:hover{
