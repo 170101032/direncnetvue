@@ -20,6 +20,8 @@
         </div>
         <FooterTop class="column is-12" />
         <Footer class="column is-12" />
+        
+        <FloatBar />
     </section>
 </template>
 
@@ -30,6 +32,7 @@ import Sidebar from "@/components/Sidebar.vue";
 import Product from "@/components/Product.vue";
 import FooterTop from "@/components/FooterTop.vue";
 import Footer from "@/components/Footer.vue";
+import FloatBar from "@/components/FloatBar.vue";
 
 export default {
     name: "ProductPage",
@@ -40,6 +43,7 @@ export default {
         Product,
         FooterTop,
         Footer,
+        FloatBar,
     },
 };
 </script>
