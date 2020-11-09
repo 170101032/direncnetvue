@@ -1,21 +1,25 @@
 <template>
-    <div class="columns is-multiline float-bar p-4">
+    <div class="columns is-multiline product-tab p-2">
         <div class="column is-12">
-            <div class="columns">
-                <div class="column is-4">Raspberry Pi 4 4GB - Model B<br />Raspberry Pi</div>
-                <div class="column is-4">630.39 TL</div>
-                <div class="column is-4">Sepete Ekle</div>
-            </div>
+            <b-tabs>
+                <b-tab-item label="Urun Ozellikleri"></b-tab-item>
+                <b-tab-item label="Odeme Secenekleri"></b-tab-item>
+                <b-tab-item label="Yorumlar(17)"><ProductComment /></b-tab-item>
+                <b-tab-item label="Resimler"></b-tab-item>
+            </b-tabs>
         </div>
     </div>
 </template>
 
 <script>
+import ProductComment from "@/components/ProductDetail/ProductComment.vue";
 //import store from "@/store";
 
 export default {
-    name: "Header",
-    components: {},
+    name: "ProductTab",
+    components: {
+        ProductComment,
+    },
     props: {},
     data() {
         return {};
@@ -26,13 +30,15 @@ export default {
 };
 </script>
 
-<style scoped>
-.float-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+<style>
+.product-tab .tabs li.is-active a {
+    color: #0aa2ee !important;
+    border-bottom: 2px solid #0aa2ee !important;
+}
+.product-tab .tabs li {
+    line-height: 30px;
+    font-size: 18px;
+    color: #021e2c;
+    font-weight: 300;
 }
 </style>

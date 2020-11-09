@@ -13,7 +13,8 @@
                         <Sidebar />
                     </div>
                     <div class="column is-9">
-                        <Product />
+                        <ProductDetail />
+                        <ProductTab />
                     </div>
                 </div>
             </div>
@@ -29,7 +30,8 @@
 import Header from "@/components/General/Header.vue";
 import Navbar from "@/components/General/Navbar.vue";
 import Sidebar from "@/components/General/Sidebar.vue";
-import Product from "@/components/ProductDetail/ProductDetail.vue";
+import ProductDetail from "@/components/ProductDetail/ProductDetail.vue";
+import ProductTab from "@/components/ProductDetail/ProductTab.vue";
 import FooterTop from "@/components/General/FooterTop.vue";
 import Footer from "@/components/General/Footer.vue";
 import FloatBar from "@/components/ProductDetail/FloatBar.vue";
@@ -40,7 +42,8 @@ export default {
         Header,
         Navbar,
         Sidebar,
-        Product,
+        ProductDetail,
+        ProductTab,
         FooterTop,
         Footer,
         FloatBar,

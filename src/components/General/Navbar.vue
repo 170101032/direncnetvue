@@ -47,6 +47,7 @@ export default {
 }
 .item:last-child:hover{
     background-color: #018cd1;
+
 }
 .item:last-child{
     border-right: 0;
