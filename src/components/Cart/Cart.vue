@@ -1,45 +1,56 @@
 <template>
     <div class="container">
         <div class="columns is-multiline cart p-4">
-            <div class="column is-12 cart-title">
-                Urun Sepetinize Eklendi
-            </div>
             <div class="column is-12">
                 <table class="column is-12 table-box">
                     <tr class="columns">
-                        <th class="column is-1 table-box table-head p-2">Urun</th>
-                        <th class="column is-4 table-box table-head p-2">Urun Adi</th>
-                        <th class="column is-2 table-box table-head p-2">Miktar</th>
-                        <th class="column is-2 table-box table-head p-2">Birim Fiyati</th>
-                        <th class="column is-2 table-box table-head p-2">Toplam Tutar</th>
-                        <th class="column is-1 table-box table-head p-2">Sil</th>
+                        <th class="column is-1 table-head table-bold p-2">Urun</th>
+                        <th class="column is-4 table-head table-bold p-2">Urun Adi</th>
+                        <th class="column is-2 table-head table-bold p-2">Miktar</th>
+                        <th class="column is-2 table-head table-bold p-2">Birim Fiyati</th>
+                        <th class="column is-2 table-head table-bold p-2">Toplam Tutar</th>
+                        <th class="column is-1 table-head table-bold p-2">Sil</th>
                     </tr>
                     <tr class="columns">
-                        <td class="column is-1 table-box p-2"><img class="cart-img" src="@/assets/detail/rpi1.png" /></td>
-                        <td class="column is-4 table-box table-head p-2"><span>Raspberry Pi 4 4GB - Model B</span></td>
-                        <td class="column is-2 table-box p-2">
-                            <div class="column is-12 table-box p-2 pb-4">
-                                ADET:<br /><br />
-                                <a @click="quantity > 1 ? quantity-- : 1" class="table-box p-2 px-3 mx-1">-</a>
+                        <td class="column is-1 p-2"><img class="cart-img" src="@/assets/detail/rpi1.png" /></td>
+                        <td class="column is-4 table-bold p-2"><span>Raspberry Pi 4 4GB - Model B</span></td>
+                        <td class="column is-2 p-2">
+                            <div class="column is-12 table-box p-4">
+                                ADET:
+                                <a @click="quantity > 1 ? quantity-- : 1" class="table-box p-2 px-3 ml-4 mr-1">-</a>
                                 {{ quantity }}
                                 <a @click="quantity++" class="table-box p-2 px-3 mx-1">+</a>
                             </div>
                         </td>
-                        <td class="column is-2 table-box p-2">502,99 TL + %18 KDV</td>
-                        <td class="column is-2 table-box p-2">593,53 TL</td>
-                        <td class="column is-1 table-box p-2">
+                        <td class="column is-2 table-bold p-2">502,99 TL + %18 KDV</td>
+                        <td class="column is-2 p-2">593,53 TL</td>
+                        <td class="column is-1 p-2">
                             <a class="cart-cross p-1"><img src="@/assets/cart/cross.png"/></a>
                         </td>
                     </tr>
                 </table>
             </div>
             <div class="column is-12" align="right">
-                <div class="column is-4 table-box p-1" align="right"><b class="is-pulled-left px-2 table-head">Sepet Toplamı:</b> {{ 593.53 * quantity }} TL</div>
-            </div>
-
-            <div class="column is-12 border-top mt-3 p-2 pt-3">
-                <a class="cart-button p-2" href="/">Alisverise Devam</a>
-                <a class="cart-button p-2 is-pulled-right" href="/cart">Sepete Git</a>
+                <div class="column is-12" align="left">
+                    <div class="column is-8">
+                        <a class="cart-link p-1 mr-1">Sepeti Guncelle</a>
+                        <a class="cart-link p-1 mr-1">Sepeti Temizle</a>
+                        <a class="cart-link p-1 mr-1">Alisverise Devam</a>
+                        <a class="cart-link p-1 mr-1">Alisveris Listeme Ekle</a>
+                    </div>
+                </div>
+                <div class="column is-4" align="right">
+                    <table class="column is-12">
+                        <tr class="columns">
+                            <td class="column is-6 table-box p-1">Sepet Toplamı</td>
+                            <td class="column is-6 table-box p-1">593,53 TL</td>
+                        </tr>
+                        <tr class="columns">
+                            <td class="column is-6 table-box p-1">Genel Toplam</td>
+                            <td class="column is-6 table-box p-1">593,53 TL</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -69,8 +80,16 @@ export default {
 .cart-title {
     font-size: 20px;
 }
+.cart-link{
+    color:#fff;
+    background-color: #012990;
+}
+.cart-link:hover{
+    color: #fff;
+    background-color: #3CBEFF;
+}
 .cart-img {
-    width: 60px;
+    width: 90px;
 }
 .cart-cross {
     background-color: #012990;
@@ -95,10 +114,13 @@ export default {
     cursor: pointer;
 }
 .table-head {
-    color: #000;
-    font-weight: 700;
+    background-color: #ececec;
 }
 .table-box {
     border: 1px solid #ececec;
+}
+.table-bold {
+    font-weight: 700;
+    color: #000;
 }
 </style>

@@ -6,7 +6,7 @@
             </div>
         </div>
         <div class="column is-3" v-for="(item, i) of items" :key="i">
-            <a class="">
+            <a href="/productdetails">
                 <div class="columns is-multiline carditem">
                     <div class="column is-12">
                         <img :src="require('@/assets/products/' + item.img)" />
@@ -40,6 +40,12 @@ export default {
         return {
             cartmodalActive:false,
             items: [
+                 {
+                    title: "Raspberry Pi 4 4 GB - Model B",
+                    img: "raspbery.jpg",
+                    price: "392,49",
+                    link: "/productdetails",
+                },
                 {
                     title: "Anycubic 4 MAX Pro 3 D Printer / 3 D Yazıcı - Monteli - Beyaz Renk",
                     img: "printer.jpg",
@@ -56,13 +62,7 @@ export default {
                     title: "Esp8266 Seri Wifi Modül",
                     img: "wifimodul.jpg",
                     price: "11,05",
-                    link: "/",
-                },
-                {
-                    title: "Raspberry Pi 4 4 GB - Model B",
-                    img: "raspbery.jpg",
-                    price: "392,49",
-                    link: "/",
+                    link: "/productdetails",
                 },
                 {
                     title: "HC - SR04 Arduino Ultrasonik Mesafe Sensörü",

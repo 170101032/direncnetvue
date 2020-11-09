@@ -18,7 +18,9 @@
             <div class="container">
                 <div class="columns pt-2">
                     <div class="column">
-                        <img src="@/assets/header/logo.png" />
+                        <a href="/">
+                            <img src="@/assets/header/logo.png" />
+                        </a>
                     </div>
                     <div class="column">
                         <b-field class="search" position="is-centered">
@@ -38,7 +40,7 @@
             </div>
         </div>
         <b-modal v-model="signinActive" has-modal-card trap-focus :destroy-on-hide="false" aria-role="dialog" aria-modal>
-             <a class="close"><img src="@/assets/signin/popupClose.png"/></a>
+            <a class="close"><img src="@/assets/signin/popupClose.png"/></a>
             <SignInModal />
         </b-modal>
     </div>
