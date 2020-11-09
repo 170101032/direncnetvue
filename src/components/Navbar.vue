@@ -35,22 +35,19 @@ export default {
 .navbarx {
     background-color: #018cd1;
 }
-.item:last-child:hover{
-    background-color: #018cd1;
-}
-.item:last-child{
-    border-right: 0;
-}
 .item{
     color: #fff;
     cursor:pointer;
     text-align: center;
     border-right: 1px solid #fff;
 }
-.first{
-    width:22% !important
-}
 .item:hover {
     background-color: #3cbeff;
+}
+.item:last-child:hover{
+    background-color: #018cd1;
+}
+.item:last-child{
+    border-right: 0;
 }
 </style>
