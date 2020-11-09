@@ -1,5 +1,5 @@
 <template>
-    <div class="columns is-mdivtiline footer">
+    <div class="columns is-multiline footer">
         <div class="container">
             <div class="column is-12 top">
                 <div class="columns">

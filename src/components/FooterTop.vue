@@ -1,6 +1,12 @@
 <template>
-    <div class="container">
-     
+    <div class="footerTop p-4 mb-3">
+        <div class="container">
+            <div class="columns">
+                <div class="column">Guvenli Alisveris</div>
+                <div class="column">150TL ve uzeri bedava</div>
+                <div class="column">0850 450 47 47</div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -12,9 +18,7 @@ export default {
     components: {},
     props: {},
     data() {
-        return {
-         
-        };
+        return {};
     },
     async created() {},
     methods: {},
@@ -23,4 +27,9 @@ export default {
 </script>
 
 <style>
+.footerTop {
+    color:#fff;
+    background: rgba(10, 162, 238, 0.7);
+    border-bottom: 4px solid rgb(8 122 180);
+}
 </style>
