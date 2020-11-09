@@ -25,7 +25,7 @@
 //import store from "@/store";
 
 export default {
-    name: "Header",
+    name: "Sidebar",
     components: {},
     props: {},
     data() {
